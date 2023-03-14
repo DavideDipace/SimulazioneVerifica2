@@ -1,6 +1,6 @@
 <html>
 
-    <link rel="stylesheet" href="Homepage.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Homepage.css') }}">
 
     <head>
 
@@ -9,6 +9,9 @@
     <body>
         <p class="testo">Museo degli strumenti musicali</p>
         <img src = "{{url_for('static', filename='images/MuseoFlask2.jpg')}}" align="middle"/>
+        <img src = "{{url_for('static', filename='images/persona_museo.jpg')}}" align="left"/>
+        <img src = "{{url_for('static', filename='images/Persone_al_museo_con_guida.jpg')}}" align="bottom", width = 250/>
+        <img src = "{{url_for('static', filename='images/persone_al_museo.jpg')}}" align="bottom", width = 250/>
     </body>
 
 </html>
